@@ -1,0 +1,19 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" rx="30" fill="url(#paint0_linear)"/>
+  <path d="M0 300C120 260 220 260 320 300C420 340 520 380 620 360C720 340 780 280 800 260V600H0V300Z" fill="url(#paint1_linear)" opacity="0.85"/>
+  <path d="M40 180C120 120 220 120 300 160C380 200 460 220 540 190C620 160 700 90 800 120V220C720 240 640 260 560 250C480 240 400 220 320 210C240 200 160 210 80 240C60 200 50 190 40 180Z" fill="url(#paint2_linear)" opacity="0.6"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFD"/>
+      <stop offset="1" stop-color="#EDF3F7"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="0" y1="260" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BFDCE5"/>
+      <stop offset="1" stop-color="#F6D9B8"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear" x1="0" y1="120" x2="800" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CFE7F2"/>
+      <stop offset="1" stop-color="#F7DCD0"/>
+    </linearGradient>
+  </defs>
+</svg>
