@@ -1,133 +1,225 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh-Hant" class="no-js">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Switch Template</title>
+    <title>Mayasalu 水彩畫廊</title>
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
-<body class="is-boxed has-animations">
+<body class="is-boxed has-animations watercolor-page">
     <div class="body-wrap boxed-container">
         <header class="site-header">
             <div class="container">
                 <div class="site-header-inner">
                     <div class="brand header-brand">
                         <h1 class="m-0">
-                            <a href="#">
-								<img class="header-logo-image asset-light" src="dist/images/logo-light.svg" alt="Logo">
-								<img class="header-logo-image asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
-                            </a>
+                            <a class="site-logo" href="#hero">Mayasalu</a>
                         </h1>
                     </div>
+                    <nav class="site-nav">
+                        <a href="#about">關於</a>
+                        <a href="#gallery">畫廊</a>
+                        <a href="#visit">參觀</a>
+                        <a href="#contact">聯絡</a>
+                    </nav>
                 </div>
             </div>
         </header>
 
         <main>
-            <section class="hero">
+            <section class="hero" id="hero">
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">Landing template for startups</h1>
-	                        <p class="hero-paragraph">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+	                        <h1 class="hero-title mt-0">Mayasalu 水彩畫廊</h1>
+	                        <p class="hero-paragraph">以水彩捕捉光與情緒，讓透明層疊與流動暈染成為記憶裡最輕盈的色彩。</p>
 	                        <div class="hero-cta">
-								<a class="button button-primary" href="#">Buy it now</a>
-								<div class="lights-toggle">
-									<input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch" checked="checked">
-									<label for="lights-toggle" class="text-xs"><span>Turn me <span class="label-text">dark</span></span></label>
-								</div>
+								<a class="button button-primary" href="#gallery">查看作品</a>
+								<a class="button button-secondary" href="#contact">聯絡我</a>
 							</div>
 						</div>
 						<div class="hero-media">
-							<div class="header-illustration">
-								<img class="header-illustration-image asset-light" src="dist/images/header-illustration-light.svg" alt="Header illustration">
-								<img class="header-illustration-image asset-dark" src="dist/images/header-illustration-dark.svg" alt="Header illustration">
-							</div>
-							<div class="hero-media-illustration">
-								<img class="hero-media-illustration-image asset-light" src="dist/images/hero-media-illustration-light.svg" alt="Hero media illustration">
-								<img class="hero-media-illustration-image asset-dark" src="dist/images/hero-media-illustration-dark.svg" alt="Hero media illustration">
-							</div>
-							<div class="hero-media-container">
-								<img class="hero-media-image asset-light" src="dist/images/hero-media-light.svg" alt="Hero media">
-								<img class="hero-media-image asset-dark" src="dist/images/hero-media-dark.svg" alt="Hero media">
-							</div>
+							<div class="hero-art">
+                                <img src="dist/images/gallery/hero-watercolor.svg" alt="Mayasalu 水彩示意作品">
+                                <span class="hero-art-caption">透明層疊 · 自然光感 · 細膩留白</span>
+                            </div>
 						</div>
                     </div>
                 </div>
             </section>
 
-            <section class="features section">
+            <section class="section about" id="about">
                 <div class="container">
-					<div class="features-inner section-inner has-bottom-divider">
-						<div class="features-header text-center">
-							<div class="container-sm">
-								<h2 class="section-title mt-0">The Product</h2>
-	                            <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
-								<div class="features-image">
-									<img class="features-illustration asset-dark" src="dist/images/features-illustration-dark.svg" alt="Feature illustration">
-									<img class="features-box asset-dark" src="dist/images/features-box-dark.svg" alt="Feature box">
-									<img class="features-illustration asset-dark" src="dist/images/features-illustration-top-dark.svg" alt="Feature illustration top">
-									<img class="features-illustration asset-light" src="dist/images/features-illustration-light.svg" alt="Feature illustration">
-									<img class="features-box asset-light" src="dist/images/features-box-light.svg" alt="Feature box">
-									<img class="features-illustration asset-light" src="dist/images/features-illustration-top-light.svg" alt="Feature illustration top">
-								</div>
-							</div>
+					<div class="section-inner has-bottom-divider">
+                        <div class="section-heading">
+                            <p class="section-eyebrow">關於 Mayasalu</p>
+						    <h2 class="section-title mt-0">以水彩流動述說光影</h2>
                         </div>
-                        <div class="features-wrap">
-                            <div class="feature is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img class="asset-light" src="dist/images/feature-01-light.svg" alt="Feature 01">
-										<img class="asset-dark" src="dist/images/feature-01-dark.svg" alt="Feature 01">
+                        <p class="section-paragraph">
+                            Mayasalu 是一位專注於水彩的藝術家，長期描繪自然景致與城市角落。她的畫面以透明層疊與濕畫法為核心，讓色彩在紙上自然暈染，保留空氣感與留白，使光線能自在呼吸。她擅長以柔和的色階與細膩的邊緣控制，捕捉雨後街景、河岸植物與旅途中微小的情緒；作品介於寫實與詩意之間，讓觀者在安靜的色彩裡感受片刻的寧靜。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+			<section class="section gallery" id="gallery">
+                <div class="container">
+                    <div class="section-inner has-bottom-divider">
+                        <div class="section-heading">
+                            <p class="section-eyebrow">線上畫廊</p>
+                            <h2 class="section-title mt-0">Watercolor Gallery</h2>
+                            <p class="section-paragraph">點擊作品即可放大觀看細節，透過分類切換探索不同主題。</p>
+                        </div>
+                        <div class="filter-group" role="tablist" aria-label="作品分類篩選">
+                            <button class="filter-button is-active" type="button" data-filter="all">全部</button>
+                            <button class="filter-button" type="button" data-filter="nature">自然</button>
+                            <button class="filter-button" type="button" data-filter="city">城市</button>
+                            <button class="filter-button" type="button" data-filter="abstract">抽象</button>
+                        </div>
+                        <div class="gallery-grid">
+                            <article class="art-card" data-category="nature">
+                                <button class="art-card-button" type="button" data-image="dist/images/gallery/art-01.svg" data-title="晨霧河岸" data-year="2023" data-size="31 x 41 cm" data-description="清晨薄霧輕覆河面，透明層疊保留柔軟光感。">
+                                    <img src="dist/images/gallery/art-01.svg" alt="晨霧河岸">
+                                    <div class="art-card-body">
+                                        <h3>晨霧河岸</h3>
+                                        <p>2023 · 31 x 41 cm</p>
+                                        <span>清晨薄霧輕覆河面，透明層疊保留柔軟光感。</span>
                                     </div>
-									<div class="feature-content">
-                                    	<h3 class="feature-title mt-0">Discover</h3>
-                                    	<p class="text-sm mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
-									</div>
-								</div>
-                            </div>
-							<div class="feature is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img class="asset-light" src="dist/images/feature-02-light.svg" alt="Feature 02">
-										<img class="asset-dark" src="dist/images/feature-02-dark.svg" alt="Feature 02">
+                                </button>
+                            </article>
+                            <article class="art-card" data-category="nature">
+                                <button class="art-card-button" type="button" data-image="dist/images/gallery/art-02.svg" data-title="午後花徑" data-year="2024" data-size="28 x 38 cm" data-description="濕畫法讓花徑色彩流動，留白成為光的入口。">
+                                    <img src="dist/images/gallery/art-02.svg" alt="午後花徑">
+                                    <div class="art-card-body">
+                                        <h3>午後花徑</h3>
+                                        <p>2024 · 28 x 38 cm</p>
+                                        <span>濕畫法讓花徑色彩流動，留白成為光的入口。</span>
                                     </div>
-									<div class="feature-content">
-                                    	<h3 class="feature-title mt-0">Discover</h3>
-                                    	<p class="text-sm mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
-									</div>
-								</div>
-                            </div>
-							<div class="feature is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img class="asset-light" src="dist/images/feature-03-light.svg" alt="Feature 03">
-										<img class="asset-dark" src="dist/images/feature-03-dark.svg" alt="Feature 03">
+                                </button>
+                            </article>
+                            <article class="art-card" data-category="city">
+                                <button class="art-card-button" type="button" data-image="dist/images/gallery/art-03.svg" data-title="海港午後" data-year="2022" data-size="33 x 45 cm" data-description="港邊建築以細筆疊色，微風的透明感被輕柔捕捉。">
+                                    <img src="dist/images/gallery/art-03.svg" alt="海港午後">
+                                    <div class="art-card-body">
+                                        <h3>海港午後</h3>
+                                        <p>2022 · 33 x 45 cm</p>
+                                        <span>港邊建築以細筆疊色，微風的透明感被輕柔捕捉。</span>
                                     </div>
-									<div class="feature-content">
-                                    	<h3 class="feature-title mt-0">Discover</h3>
-                                    	<p class="text-sm mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
-									</div>
-								</div>
-                            </div>
+                                </button>
+                            </article>
+                            <article class="art-card" data-category="city">
+                                <button class="art-card-button" type="button" data-image="dist/images/gallery/art-04.svg" data-title="轉角咖啡館" data-year="2023" data-size="30 x 40 cm" data-description="城市轉角的安靜午後，以淡彩描繪光影交錯。">
+                                    <img src="dist/images/gallery/art-04.svg" alt="轉角咖啡館">
+                                    <div class="art-card-body">
+                                        <h3>轉角咖啡館</h3>
+                                        <p>2023 · 30 x 40 cm</p>
+                                        <span>城市轉角的安靜午後，以淡彩描繪光影交錯。</span>
+                                    </div>
+                                </button>
+                            </article>
+                            <article class="art-card" data-category="abstract">
+                                <button class="art-card-button" type="button" data-image="dist/images/gallery/art-05.svg" data-title="薄霧之歌" data-year="2021" data-size="27 x 35 cm" data-description="抽象的色塊在水痕間漂浮，留下呼吸般的節奏。">
+                                    <img src="dist/images/gallery/art-05.svg" alt="薄霧之歌">
+                                    <div class="art-card-body">
+                                        <h3>薄霧之歌</h3>
+                                        <p>2021 · 27 x 35 cm</p>
+                                        <span>抽象的色塊在水痕間漂浮，留下呼吸般的節奏。</span>
+                                    </div>
+                                </button>
+                            </article>
+                            <article class="art-card" data-category="nature">
+                                <button class="art-card-button" type="button" data-image="dist/images/gallery/art-06.svg" data-title="山徑微光" data-year="2024" data-size="34 x 46 cm" data-description="層層洗色描繪山徑，光線在留白間靜靜流動。">
+                                    <img src="dist/images/gallery/art-06.svg" alt="山徑微光">
+                                    <div class="art-card-body">
+                                        <h3>山徑微光</h3>
+                                        <p>2024 · 34 x 46 cm</p>
+                                        <span>層層洗色描繪山徑，光線在留白間靜靜流動。</span>
+                                    </div>
+                                </button>
+                            </article>
+                            <article class="art-card" data-category="city">
+                                <button class="art-card-button" type="button" data-image="dist/images/gallery/art-07.svg" data-title="雨後巷弄" data-year="2022" data-size="29 x 39 cm" data-description="雨後路面反射微光，濕畫法暈染出城市的溫度。">
+                                    <img src="dist/images/gallery/art-07.svg" alt="雨後巷弄">
+                                    <div class="art-card-body">
+                                        <h3>雨後巷弄</h3>
+                                        <p>2022 · 29 x 39 cm</p>
+                                        <span>雨後路面反射微光，濕畫法暈染出城市的溫度。</span>
+                                    </div>
+                                </button>
+                            </article>
+                            <article class="art-card" data-category="abstract">
+                                <button class="art-card-button" type="button" data-image="dist/images/gallery/art-08.svg" data-title="潮汐呼吸" data-year="2023" data-size="32 x 42 cm" data-description="水色流動像潮汐起伏，以柔和層疊留下節奏感。">
+                                    <img src="dist/images/gallery/art-08.svg" alt="潮汐呼吸">
+                                    <div class="art-card-body">
+                                        <h3>潮汐呼吸</h3>
+                                        <p>2023 · 32 x 42 cm</p>
+                                        <span>水色流動像潮汐起伏，以柔和層疊留下節奏感。</span>
+                                    </div>
+                                </button>
+                            </article>
                         </div>
                     </div>
                 </div>
             </section>
 
-			<section class="cta section">
-                <div class="container-sm">
-                    <div class="cta-inner section-inner">
-                        <div class="cta-header text-center">
-                            <h2 class="section-title mt-0">Get it and Switch</h2>
-                            <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
-							<div class="cta-cta">
-								<a class="button button-primary" href="#">Buy it now</a>
-							</div>
-					    </div>
+            <section class="section visit" id="visit">
+                <div class="container">
+                    <div class="section-inner has-bottom-divider">
+                        <div class="section-heading">
+                            <p class="section-eyebrow">實體畫廊</p>
+                            <h2 class="section-title mt-0">到訪 Mayasalu 實體空間</h2>
+                            <p class="section-paragraph">採預約制，歡迎提前聯絡安排觀展時間。</p>
+                        </div>
+                        <div class="visit-card">
+                            <div>
+                                <p class="visit-label">地址</p>
+                                <p class="visit-text">高雄市鼓山區蓬萊路17號</p>
+                                <p class="visit-label">營業時間</p>
+                                <p class="visit-text">採預約制</p>
+                            </div>
+                            <a class="button button-primary" href="https://www.google.com/maps/search/?api=1&query=%E9%AB%98%E9%9B%84%E5%B8%82%E9%BC%93%E5%B1%B1%E5%8D%80%E8%93%AC%E8%90%8A%E8%B7%AF17%E8%99%9F" target="_blank" rel="noopener">開啟 Google 地圖</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section contact" id="contact">
+                <div class="container">
+                    <div class="section-inner">
+                        <div class="section-heading">
+                            <p class="section-eyebrow">聯絡</p>
+                            <h2 class="section-title mt-0">與 Mayasalu 聊聊合作</h2>
+                            <p class="section-paragraph">歡迎留下訊息，我會在收到後盡快回覆。</p>
+                        </div>
+                        <div class="contact-grid">
+                            <form class="contact-form" id="contact-form" novalidate>
+                                <label>
+                                    姓名
+                                    <input type="text" name="name" required placeholder="請輸入姓名">
+                                </label>
+                                <label>
+                                    Email
+                                    <input type="email" name="email" required placeholder="name@example.com">
+                                </label>
+                                <label>
+                                    訊息
+                                    <textarea name="message" rows="5" required placeholder="想說的話..."></textarea>
+                                </label>
+                                <p class="form-note" id="form-note" aria-live="polite"></p>
+                                <button class="button button-primary" type="submit">送出訊息</button>
+                            </form>
+                            <div class="contact-alt">
+                                <h3>其他聯絡方式</h3>
+                                <ul>
+                                    <li>IG：@mayasalu.art</li>
+                                    <li>信箱：hello@mayasalu.art</li>
+                                    <li>合作邀約：水彩課程、品牌委託、展覽策劃</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -137,57 +229,35 @@
             <div class="container">
                 <div class="site-footer-inner">
                     <div class="brand footer-brand">
-                        <a href="#">
-							<img class="asset-light" src="dist/images/logo-light.svg" alt="Logo">
-							<img class="asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
-                        </a>
+                        <span class="footer-logo">Mayasalu</span>
                     </div>
-                    <ul class="footer-links list-reset">
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#">About us</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ's</a>
-                        </li>
-                        <li>
-                            <a href="#">Support</a>
-                        </li>
-                    </ul>
-                    <ul class="footer-social-links list-reset">
-                        <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Facebook</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#FFF"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Twitter</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFF"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Google</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#FFF"/>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="footer-copyright">&copy; 2018 Switch, all rights reserved</div>
+                    <div class="footer-links">
+                        <a href="#gallery">作品</a>
+                        <a href="#visit">實體畫廊</a>
+                        <a href="#contact">聯絡</a>
+                    </div>
+                    <div class="footer-copyright">&copy; <span id="current-year"></span> Mayasalu</div>
+                    <div class="footer-note">Watercolor Artist Online Gallery</div>
                 </div>
             </div>
         </footer>
     </div>
 
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+            <button class="lightbox-close" type="button" aria-label="關閉">×</button>
+            <div class="lightbox-content">
+                <img id="lightbox-image" src="" alt="">
+                <div class="lightbox-meta">
+                    <h3 id="lightbox-title"></h3>
+                    <p id="lightbox-info"></p>
+                    <p id="lightbox-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="dist/js/main.min.js"></script>
+    <script src="dist/js/gallery.js"></script>
 </body>
 </html>
