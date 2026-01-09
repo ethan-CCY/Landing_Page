@@ -1,18 +1,19 @@
-# Switch
+# Mayasalu 水彩畫廊
 
-A landing page template.
+Mayasalu 是水彩藝術家個人線上畫廊的展示網站，主打透明層疊與留白的清爽視覺，並提供作品分類、放大檢視與聯絡表單。
 
-* [Getting started](#getting-started)
+## Demo
 
-## Getting started
-* First, ensure that node.js & npm are both installed. If not, choose your OS and installation method from [this page](https://nodejs.org/en/download/package-manager/) and follow the instructions.
-* This template requires Node 14 to work. You can handle multiple node versions with [NVM](https://github.com/nvm-sh/nvm) 
-* Next, use your command line to enter your project directory.
-* This template comes with a ready-to-use package file called `package-sample.json`. You just need to rename it to `package.json`, then run `npm install` to install all of the dependencies into your project.
+https://ethan-CCY.github.io/Landing_Page/
 
-You're ready to go! Run any task by typing `npm run task` (where "task" is the name of the task in the `"scripts"` object). The most useful task for rapid development is `watch`. It will start a new server, open up a browser and watch for any SCSS or JS changes in the `src` directory; once it compiles those changes, the browser will automatically inject the changed file(s)!
+## 功能列表
+
+- 水彩藝術家個人品牌與畫風介紹
+- 線上畫廊作品網格、分類篩選與 Lightbox 放大檢視
+- 實體畫廊資訊與 Google 地圖導引
+- 前端驗證的聯絡表單與替代聯絡方式
+- RWD 版面支援手機與平板
 
 ## License
 This project is based on a GPL-licensed template and is intended for learning
 and demonstration purposes.
-

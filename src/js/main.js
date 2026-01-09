@@ -1,51 +1,75 @@
-(function () {
-  const doc = document
-  const rootEl = doc.documentElement
-  const body = doc.body
-  const lightSwitch = doc.getElementById('lights-toggle')
-  /* global ScrollReveal */
-  const sr = window.sr = ScrollReveal()
+(() => {
+  const filterButtons = document.querySelectorAll('.filter-button')
+  const galleryCards = document.querySelectorAll('.gallery-card')
+  const lightbox = document.getElementById('lightbox')
+  const lightboxImage = document.querySelector('.lightbox-image')
+  const lightboxTitle = document.querySelector('.lightbox-title')
+  const lightboxMeta = document.querySelector('.lightbox-meta')
+  const lightboxDesc = document.querySelector('.lightbox-desc')
+  const closeTargets = document.querySelectorAll('[data-close]')
+  const contactForm = document.getElementById('contact-form')
+  const formMessage = document.querySelector('.form-message')
 
-  rootEl.classList.remove('no-js')
-  rootEl.classList.add('js')
+  const openLightbox = (card) => {
+    const title = card.dataset.title
+    const year = card.dataset.year
+    const size = card.dataset.size
+    const desc = card.dataset.desc
+    const gradient = card.querySelector('.gallery-image').style.getPropertyValue('--gradient')
 
-  window.addEventListener('load', function () {
-    body.classList.add('is-loaded')
+    lightboxTitle.textContent = title
+    lightboxMeta.textContent = `${year}｜${size}`
+    lightboxDesc.textContent = desc
+    lightboxImage.style.setProperty('--gradient', gradient)
+    lightbox.classList.add('is-open')
+    lightbox.setAttribute('aria-hidden', 'false')
+  }
+
+  const closeLightbox = () => {
+    lightbox.classList.remove('is-open')
+    lightbox.setAttribute('aria-hidden', 'true')
+  }
+
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      filterButtons.forEach((btn) => {
+        btn.classList.remove('is-active')
+        btn.setAttribute('aria-selected', 'false')
+      })
+      button.classList.add('is-active')
+      button.setAttribute('aria-selected', 'true')
+
+      const filter = button.dataset.filter
+      galleryCards.forEach((card) => {
+        const match = filter === 'all' || card.dataset.category === filter
+        card.hidden = !match
+      })
+    })
   })
 
-  // Reveal animations
-  function revealAnimations () {
-    sr.reveal('.feature', {
-      duration: 600,
-      distance: '20px',
-      easing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
-      origin: 'right',
-      viewFactor: 0.2
+  galleryCards.forEach((card) => {
+    card.addEventListener('click', () => openLightbox(card))
+  })
+
+  closeTargets.forEach((target) => {
+    target.addEventListener('click', closeLightbox)
+  })
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && lightbox.classList.contains('is-open')) {
+      closeLightbox()
+    }
+  })
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', (event) => {
+      event.preventDefault()
+      if (!contactForm.checkValidity()) {
+        formMessage.textContent = '請完整填寫必填欄位後再送出。'
+        return
+      }
+      formMessage.textContent = '訊息已送出（前端示意），我會盡快回覆您。'
+      contactForm.reset()
     })
   }
-
-  if (body.classList.contains('has-animations')) {
-    window.addEventListener('load', revealAnimations)
-  }
-
-  // Light switcher
-  if (lightSwitch) {
-    window.addEventListener('load', checkLights)
-    lightSwitch.addEventListener('change', checkLights)
-  }
-
-  function checkLights () {
-    let labelText = lightSwitch.parentNode.querySelector('.label-text')
-    if (lightSwitch.checked) {
-      body.classList.remove('lights-off')
-      if (labelText) {
-        labelText.innerHTML = 'dark'
-      }
-    } else {
-      body.classList.add('lights-off')
-      if (labelText) {
-        labelText.innerHTML = 'light'
-      }
-    }
-  }
-}())
+})()
