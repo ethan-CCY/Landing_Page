@@ -1,0 +1,20 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="url(#paint0_linear)"/>
+  <ellipse cx="260" cy="280" rx="190" ry="160" fill="url(#paint1_radial)" fill-opacity="0.75"/>
+  <ellipse cx="540" cy="330" rx="210" ry="150" fill="url(#paint2_radial)" fill-opacity="0.65"/>
+  <path d="M200 170C280 230 360 260 460 250" stroke="#ffffff" stroke-opacity="0.4" stroke-width="10" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f6f7fb"/>
+      <stop offset="1" stop-color="#dce6f4"/>
+    </linearGradient>
+    <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 280) rotate(90) scale(160 190)">
+      <stop stop-color="#cfd8e8"/>
+      <stop offset="1" stop-color="#cfd8e8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(540 330) rotate(90) scale(150 210)">
+      <stop stop-color="#bcd1e6"/>
+      <stop offset="1" stop-color="#bcd1e6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

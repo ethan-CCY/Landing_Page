@@ -1,8 +1,16 @@
-# Switch
+# Mayasalu 水彩畫廊
 
-A landing page template.
+Mayasalu 的水彩藝術家個人線上畫廊，聚焦透明層疊、流動暈染與自然光感的作品展示。
 
-* [Getting started](#getting-started)
+## Demo
+- https://ethan-CCY.github.io/Landing_Page/
+
+## 功能列表
+- Hero 首屏與導覽，快速連結到各區塊
+- 線上畫廊作品卡片、分類篩選與 Lightbox 放大查看
+- 實體畫廊資訊與 Google Maps 連結
+- 聯絡表單與前端驗證、替代聯絡方式
+- RWD 版面，手機尺寸自動調整畫廊欄數
 
 ## Getting started
 * First, ensure that node.js & npm are both installed. If not, choose your OS and installation method from [this page](https://nodejs.org/en/download/package-manager/) and follow the instructions.
@@ -15,4 +23,3 @@ You're ready to go! Run any task by typing `npm run task` (where "task" is the n
 ## License
 This project is based on a GPL-licensed template and is intended for learning
 and demonstration purposes.
-
